@@ -9,6 +9,12 @@ public class GameManager : MonoBehaviour
     public Color[] customerColors;
     public int foodPrice;
 
+
+    [ContextMenu("ddd")]
+    public void Save()
+    {
+        PlayerPrefs.SetInt("MoneyAmount", 10000);
+    }
     private void Awake()
     {
         foodPrice = PlayerPrefs.GetInt("FoodPrice", foodPrice);
