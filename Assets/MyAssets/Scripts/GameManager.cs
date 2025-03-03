@@ -10,10 +10,16 @@ public class GameManager : MonoBehaviour
     public int foodPrice;
 
 
-    [ContextMenu("ddd")]
+    [ContextMenu("sss")]
     public void Save()
     {
         PlayerPrefs.SetInt("MoneyAmount", 10000);
+    } 
+    
+    [ContextMenu("ddd")]
+    public void del()
+    {
+        PlayerPrefs.DeleteAll();
     }
     private void Awake()
     {
