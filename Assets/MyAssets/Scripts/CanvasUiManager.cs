@@ -37,20 +37,17 @@ public class CanvasUiManager : MonoBehaviour
     public void Reload()
     {
         AudioManager.Instance.Play("Click");
-        MyAdManager.Instance.ShowInterstitialAd();
         SceneManager.LoadScene(0);
     }
 
     public void GetRewardCash()
     {
         AudioManager.Instance.Play("Click");
-        MyAdManager.Instance.ShowRewardVideo();
     }
 
     public void OpenSettingsWindow()
     {
         AudioManager.Instance.Play("Click");
-        MyAdManager.Instance.ShowInterstitialAd();
         settingsPanel.SetActive(true);
     }
 

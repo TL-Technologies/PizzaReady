@@ -25,7 +25,6 @@ public class HelperSpawner : MonoBehaviour
 
     public void BuyHelper()
     {
-        MyAdManager.Instance.ShowInterstitialAd();
 
         AudioManager.Instance.Play("Upgrade");
         _GameManager.LessMoneyinBulk(helperBuyValue);
@@ -41,7 +40,6 @@ public class HelperSpawner : MonoBehaviour
 
     public void BuyCapacity()
     {
-        MyAdManager.Instance.ShowInterstitialAd();
         AudioManager.Instance.Play("Upgrade");
         _GameManager.LessMoneyinBulk(capacityBuyVal);
 
@@ -60,7 +58,7 @@ public class HelperSpawner : MonoBehaviour
 
     public void BuySpeed()
     {
-        MyAdManager.Instance.ShowInterstitialAd();
+      
 
         AudioManager.Instance.Play("Upgrade");
 

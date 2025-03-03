@@ -74,7 +74,7 @@ public class PlayerUpgradeManager : MonoBehaviour
 
     public void BuyCapacity()
     {
-        MyAdManager.Instance.ShowInterstitialAd();
+      
         AudioManager.Instance.Play("Upgrade");
         _GameManager.LessMoneyinBulk(capacityBuyVal);
 
@@ -93,7 +93,7 @@ public class PlayerUpgradeManager : MonoBehaviour
 
     public void BuySpeed()
     {
-        MyAdManager.Instance.ShowInterstitialAd();
+       
         AudioManager.Instance.Play("Upgrade");
         _GameManager.LessMoneyinBulk(speedBuyValue);
         speedBuyValue += moneyIncreaseVal;
@@ -111,7 +111,7 @@ public class PlayerUpgradeManager : MonoBehaviour
 
     public void ProfitsUp()
     {
-        MyAdManager.Instance.ShowInterstitialAd();
+       
         AudioManager.Instance.Play("Upgrade");
         _GameManager.LessMoneyinBulk(profitBuyValue);
         profitBuyValue += moneyIncreaseVal;
